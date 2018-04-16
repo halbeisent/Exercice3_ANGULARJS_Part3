@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  </head>
+  <body ng-controller="testCtrl">
+    <div>
+      {{dateScope | date:'dd/MM/yyyy'}}
+    </div>
+    <script>
+    var testApp = angular.module('app',[]);
+    testApp.controller('testCtrl', function($scope){
+      $scope.dateScope = '2017-11-23';
+    });
+    </script>
+  </body>
+</html>
